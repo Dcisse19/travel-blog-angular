@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { environment } from 'src/environments/environment.mock';
+import { environment } from 'src/environments/environment';
 import { ITrip, TRIPS } from 'src/mocks/cities.mock';
 import { Observable, of } from 'rxjs';
 

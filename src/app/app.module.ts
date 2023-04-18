@@ -7,6 +7,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './pages/home/home.component';
 import { PostPageComponent } from './pages/post-page/post-page.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { AngularMaterialModule } from './angular-material.module';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    HttpClientModule
+    HttpClientModule,
+    AngularMaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
