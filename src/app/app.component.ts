@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import { ITrip } from 'src/mocks/cities.mock';
-import { TravelCitiesService } from './services/travel-cities/travel-cities.service';
 
 @Component({
   selector: 'app-root',
@@ -9,11 +7,4 @@ import { TravelCitiesService } from './services/travel-cities/travel-cities.serv
 })
 export class AppComponent {
   title = 'travel-blog';
-  trips!:ITrip[];
-
-  constructor(private tripService: TravelCitiesService){}
-
-  ngOnInit(){
-    this.tripService.getTrips().subscribe((trips) => this.trips = trips)
-  }
 }
