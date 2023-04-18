@@ -1,0 +1,13 @@
+@use '@angular/material' as mat;
+@use './typography.scss' as typography;
+@import 'colors.scss';
+
+@include mat.core();
+@include mat.all-component-typographies();
+
+$custom-primary: mat.define-palette($main-color);
+$custom-secondary: mat.define-palette($secondary-color);
+$custom-theme: mat.define-light-theme($custom-primary,$custom-secondary);
+
+@include mat.all-component-typographies(typography.$custom-typography);
+@include mat.all-component-themes($custom-theme);

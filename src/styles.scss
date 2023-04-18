@@ -1,4 +1,42 @@
+@import "./assets/style/custom-theme.scss";
 /* You can add global styles to this file, and also import other style files */
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+// ------ DISPLAY --------
+
+@mixin display-flex($direction: row) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+}
+
+.flex {
+  @include display-flex();
+}
+.column {
+  @include display-flex(column);
+}
+
+body{
+  width: min(94.5rem, 100%);
+}
+main{
+  @include display-flex(column);
+  width: min(64rem,90%);
+  margin: 4.4rem auto;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
+}

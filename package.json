@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --configuration development",
+    "start:dev": "ng serve --configuration development",
     "start:mock": "concurrently \"json-server --watch src/db/db.json\" \"ng serve --configuration mock\"",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
