@@ -1,0 +1,17 @@
+
+@use '@angular/material' as mat;
+$font-heading: 'Lora', serif;
+$font-text: 'Inter', serif;
+
+$custom-typography: mat.define-typography-config(
+  $font-family: $font-text,
+  $headline-1: mat.define-typography-level(1.9rem, 7rem, 400, $font-heading),
+  $headline-2: mat.define-typography-level(3.8rem, 3.5rem, 400, $font-heading),
+  $headline-3: mat.define-typography-level(3.8rem, 3.5rem, 400, $font-heading),
+  $headline-4: mat.define-typography-level(1.5rem, 2.5rem, 400, $font-heading),
+  $body-2: mat.define-typography-level(1.25rem, 2.5rem, 400, $font-text),
+);
+
+.mat-headline-6{
+  font-family: var(--font-heading);
+}
