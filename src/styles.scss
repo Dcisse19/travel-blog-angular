@@ -5,12 +5,19 @@
   padding:0;
   box-sizing: border-box;
 }
-
+:root{
+  --main-color: #C96B41;
+  --secondary-color: #EEDFD4;
+  --text-color: #000000;
+  --white: #FFFFFF;
+  --font-heading : 'Lora', serif;
+  --font-text:  'Inter', serif;
+}
 // ------ DISPLAY --------
 
 @mixin display-flex($direction: row) {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-direction: $direction;
 }
@@ -24,11 +31,16 @@
 
 body{
   width: min(94.5rem, 100%);
+  min-height: 100vh;
+  font-style: var(--font-text);
 }
 main{
   @include display-flex(column);
-  width: min(64rem,90%);
-  margin: 4.4rem auto;
+  margin-left:20vw;
+  width: 80vw;
+  justify-content: flex-start;
+  background-color: aquamarine;
+  padding: 4.5rem;
 }
 
 img {
@@ -39,4 +51,13 @@ img {
 a {
   text-decoration: none;
   color: var(--white);
+}
+
+@media (max-width: 600px) {
+  main{
+    width: 100vw;
+    margin-top:15vh;
+    margin-left:0;
+    padding: 3rem;
+  }
 }

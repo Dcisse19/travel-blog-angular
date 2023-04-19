@@ -1,13 +1,20 @@
-@use '@angular/material' as mat;
-$font-heading: 'Lora', serif;
-$font-text: 'Inter', serif;
+// var(--font-heading): 'Lora', serif;
+// $font-text:
+// :root{
 
-$custom-typography: mat.define-typography-config(
-  $font-family: $font-text,
-  $headline-1: mat.define-typography-level(1.9rem, 7rem, 400, $font-heading),
-  $headline-2: mat.define-typography-level(3.8rem, 3.5rem, 400, $font-heading),
-  $headline-3: mat.define-typography-level(3.8rem, 3.5rem, 400, $font-heading),
-  $headline-4: mat.define-typography-level(1.5rem, 2.5rem, 400, $font-heading),
-  $body-2: mat.define-typography-level(1.25rem, 2.5rem, 400, $font-text),
-);
+// }
 
+h1{
+  font: 400 clamp(1rem,3.8vw, 1.9rem) var(--font-heading);
+}
+h2{
+  font:400  clamp(1.75rem,3.8vw,3.8rem) var(--font-heading) !important;
+}
+h3{
+  font:400  clamp(1.75rem,3.8vw,3.8rem) var(--font-heading);
+}
+h4{
+  font:400  clamp(1.5rem,3.8vw,1.5rem) var(--font-heading);
+}
+p{ font: 400 clamp(1.1rem,3.8vw,1.25rem) var(--font-text);
+}

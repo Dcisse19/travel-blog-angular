@@ -1,0 +1,11 @@
+:host{
+  height: 100vh;
+  display:flex;
+  flex-direction: row;
+}
+
+@media (max-width: 600px){
+  :host{
+    flex-direction: column;
+  }
+}

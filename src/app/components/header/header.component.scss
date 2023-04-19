@@ -1,0 +1,47 @@
+@import "../../../styles.scss";
+
+:host {
+  background: var(--secondary-color);
+  position: fixed;
+  height: 100vh;
+  max-height: 100vh;
+  width: 20vw;
+  @include display-flex(column);
+  justify-content: center;
+}
+
+.header-content {
+  @include display-flex();
+  transform: rotate(-90deg);
+  flex-direction: row-reverse;
+  width: 90vh;
+  &:nth-child(2){
+    margin-left: 4rem;
+  }
+  hr {
+    border-top: 1px solid var(--text-color);
+    height: 20vw;
+    transform: rotate(360deg);
+  }
+  p{
+    font-size:clamp(0.75rem, 3.8vw, 1rem);
+  }
+}
+
+@media (max-width: 600px) {
+  :host {
+    width: 100vw;
+    height: 15vh;
+    max-height: 15vh;
+    @include display-flex();
+    justify-content: center;
+  }
+  .header-content {
+    flex-direction: row;
+    transform: rotate(360deg);
+    width:90vw;
+    hr {
+      height: 15vh;
+    }
+  }
+}
