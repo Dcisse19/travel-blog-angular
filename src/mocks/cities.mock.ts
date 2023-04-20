@@ -24,7 +24,7 @@ export const TRIPS : ITrip[] = [
   {
     id: 1,
     country: "Albanie",
-    city: "Tatata",
+    city: "Tirana",
     departureDate: "14.04.22",
     returnDate: "17.05.22" ,
     mainImage: {
