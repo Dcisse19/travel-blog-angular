@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { Injectable } from '@angular/core';
+import { Injectable, IterableDiffers } from '@angular/core';
 import { environment } from 'src/environments/environment';
 import { ITrip, TRIPS } from 'src/mocks/cities.mock';
 import { Observable, of } from 'rxjs';
@@ -33,5 +33,15 @@ export class TravelCitiesService {
 
   updateTrip(tripId: number, trip:ITrip):Observable<ITrip>{
     return this.http.put<ITrip>(`${this.tripUrl}/cities/${tripId}`, trip);
+  }
+
+  getLastTrip():Observable<ITrip>{
+    if(environment.envName === 'dev'){
+      const mainTrip = TRIPS.find((trip) => trip.isMain === true);
+      if(mainTrip){
+        return of(mainTrip);
+      } else return of(TRIPS[0]);
+    }
+    return this.http.get<ITrip>(`${this.tripUrl}/cities?isMain=true`)
   }
 }

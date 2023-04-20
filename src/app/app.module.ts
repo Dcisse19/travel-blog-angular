@@ -9,6 +9,7 @@ import { PostPageComponent } from './pages/post-page/post-page.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { AngularMaterialModule } from './angular-material.module';
 import { HeaderComponent } from './components/header/header.component';
+import { PostCardComponent } from './components/post-card/post-card.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { HeaderComponent } from './components/header/header.component';
     HomeComponent,
     PostPageComponent,
     NotFoundComponent,
-    HeaderComponent
+    HeaderComponent,
+    PostCardComponent
   ],
   imports: [
     BrowserModule,

@@ -34,8 +34,10 @@ body{
   min-height: 100vh;
   font-style: var(--font-text);
 }
+
 main{
   @include display-flex(column);
+  height: 100vh;
   margin-left:20vw;
   width: 80vw;
   justify-content: flex-start;
