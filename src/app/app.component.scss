@@ -4,6 +4,10 @@
   flex-direction: row;
 }
 
+main{
+  margin-bottom: clamp(2rem, 3.8vw, 5rem);
+}
+
 @media (max-width: 600px){
   :host{
     flex-direction: column;

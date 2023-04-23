@@ -12,6 +12,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { PostCardComponent } from './components/post-card/post-card.component';
 import { LastPostComponent } from './components/last-post/last-post.component';
 import { PostGalleryComponent } from './components/post-gallery/post-gallery.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { PostGalleryComponent } from './components/post-gallery/post-gallery.com
     HeaderComponent,
     PostCardComponent,
     LastPostComponent,
-    PostGalleryComponent
+    PostGalleryComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
