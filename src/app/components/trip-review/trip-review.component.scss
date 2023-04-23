@@ -1,0 +1,12 @@
+section{
+  gap: clamp(1rem, 3vw, 1.2rem);
+  align-items: flex-start;
+  h4{
+    margin-bottom: clamp(0.8rem, 2.5vw, 1.2rem);
+  }
+  li{
+    font-size: clamp(0.9rem, 2.5vw, 1.2rem);
+    margin-bottom: clamp(0.4rem, 2.5vw, 1rem);
+    list-style-position: inside;
+  }
+}

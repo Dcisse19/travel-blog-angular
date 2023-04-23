@@ -39,6 +39,7 @@ body{
   @include display-flex(column);
   margin-left:20vw;
   width: 80vw;
+  height: 100%;
   justify-content: flex-start;
   background-color: aquamarine;
   padding-inline: clamp(1rem, 3.8vw, 4.5rem);
