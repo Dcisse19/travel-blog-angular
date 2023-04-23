@@ -8,6 +8,7 @@
   width: 20vw;
   @include display-flex(column);
   justify-content: center;
+  z-index: 10;
 }
 
 .header-content {
@@ -30,7 +31,7 @@
 
 @media (max-width: 600px) {
   :host {
-    width: 100vw;
+    width: 100%;
     height: 15vh;
     max-height: 15vh;
     @include display-flex();

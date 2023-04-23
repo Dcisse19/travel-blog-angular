@@ -19,7 +19,7 @@ export class TravelCitiesService {
     if(environment.envName === 'dev'){
       return of(TRIPS);
     }
-    return this.http.get<ITrip[]>(`${this.tripUrl}/cities`);
+    return this.http.get<ITrip[]>(`${this.tripUrl}/cities?isMain=false`);
   }
 
   getTripById(tripId:number):Observable<ITrip>{

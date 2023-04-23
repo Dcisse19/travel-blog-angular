@@ -11,6 +11,7 @@ import { AngularMaterialModule } from './angular-material.module';
 import { HeaderComponent } from './components/header/header.component';
 import { PostCardComponent } from './components/post-card/post-card.component';
 import { LastPostComponent } from './components/last-post/last-post.component';
+import { PostGalleryComponent } from './components/post-gallery/post-gallery.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { LastPostComponent } from './components/last-post/last-post.component';
     NotFoundComponent,
     HeaderComponent,
     PostCardComponent,
-    LastPostComponent
+    LastPostComponent,
+    PostGalleryComponent
   ],
   imports: [
     BrowserModule,
