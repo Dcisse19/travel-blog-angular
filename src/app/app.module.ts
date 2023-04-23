@@ -14,6 +14,7 @@ import { LastPostComponent } from './components/last-post/last-post.component';
 import { PostGalleryComponent } from './components/post-gallery/post-gallery.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { PostHeroComponent } from './components/post-hero/post-hero.component';
+import { PostInfoComponent } from './components/post-info/post-info.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { PostHeroComponent } from './components/post-hero/post-hero.component';
     LastPostComponent,
     PostGalleryComponent,
     FooterComponent,
-    PostHeroComponent
+    PostHeroComponent,
+    PostInfoComponent
   ],
   imports: [
     BrowserModule,
