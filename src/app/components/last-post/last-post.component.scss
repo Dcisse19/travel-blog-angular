@@ -27,7 +27,7 @@ mat-card {
     .trip-dates {
       gap: clamp(0rem, 1vw, 0.5rem);
       p {
-        font: 400 clamp(0.87rem, 3.8vw, 1rem) var(--font-heading);
+        font: 400 clamp(0.6rem, 2vw, 1rem) var(--font-heading);
         hr {
           border-left: 1px solid var(--white);
           // height: 160%;
