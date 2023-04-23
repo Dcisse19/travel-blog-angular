@@ -1,0 +1,6 @@
+<section class="column">
+  <h3>Pour voyager un peu plus</h3>
+  <div class="flex gallery">
+    <img *ngFor="let picture of post.secondaryImages" src="{{picture.image}}" alt="{{picture.name}}">
+  </div>
+</section>
