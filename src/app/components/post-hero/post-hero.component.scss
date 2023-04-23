@@ -1,0 +1,11 @@
+section{
+  align-items: flex-start;
+  gap: 1rem;
+  div{
+    align-items: flex-start;
+    gap: 0.5rem;
+    p{
+      font-size:clamp(0.7rem, 3vw, 1rem);
+    }
+  }
+}
