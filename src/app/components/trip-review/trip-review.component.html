@@ -1,0 +1,21 @@
+<section class="column">
+  <h3>Notre avis</h3>
+  <div>
+    <h4>Les plus</h4>
+    <ul>
+      <li *ngFor="let plus of post.advantages">{{ plus }}</li>
+    </ul>
+  </div>
+  <div>
+    <h4>Les moins</h4>
+    <ul>
+      <li *ngFor="let minus of post.disadvantages">{{ minus }}</li>
+    </ul>
+  </div>
+  <div>
+    <h4>Mon conseil</h4>
+    <ul>
+      <li *ngFor="let advice of post.advices">{{ advice }}</li>
+    </ul>
+  </div>
+</section>

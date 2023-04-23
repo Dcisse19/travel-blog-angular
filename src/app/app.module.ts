@@ -15,6 +15,7 @@ import { PostGalleryComponent } from './components/post-gallery/post-gallery.com
 import { FooterComponent } from './components/footer/footer.component';
 import { PostHeroComponent } from './components/post-hero/post-hero.component';
 import { PostInfoComponent } from './components/post-info/post-info.component';
+import { TripReviewComponent } from './components/trip-review/trip-review.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { PostInfoComponent } from './components/post-info/post-info.component';
     PostGalleryComponent,
     FooterComponent,
     PostHeroComponent,
-    PostInfoComponent
+    PostInfoComponent,
+    TripReviewComponent
   ],
   imports: [
     BrowserModule,
