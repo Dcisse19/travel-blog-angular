@@ -1,0 +1,13 @@
+section{
+  align-items: flex-start;
+  gap: 1rem;
+  div{
+    background-color: var(--main-color);
+    padding: clamp(1rem, 2.5vw, 3.5rem);
+    color: white;
+    p{
+      line-height: clamp(1.3rem, 4vw, 2rem);
+      font-size: clamp(0.8rem, 2.5vw, 1.2rem) ;
+    }
+  }
+}
