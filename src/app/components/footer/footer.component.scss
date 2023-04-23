@@ -1,0 +1,11 @@
+:host{
+  width: 100%;
+}
+footer{
+  border: 1px solid red;
+  height: clamp(6rem, 3.8vw, 300rem);
+  justify-content: center;
+  p{
+    font: 400 clamp(1rem,3.8vw,1.5rem) var(--font-heading);
+  }
+}

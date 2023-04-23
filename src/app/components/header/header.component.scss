@@ -41,6 +41,9 @@
     flex-direction: row;
     transform: rotate(360deg);
     width:90vw;
+    a{
+      font: 400 clamp(1rem,3.8vw, 1.9rem) var(--font-heading);
+    }
     hr {
       height: 15vh;
     }

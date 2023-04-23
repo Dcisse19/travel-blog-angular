@@ -35,15 +35,14 @@ body{
   font-style: var(--font-text);
 }
 
-main{
+.main-footer{
   @include display-flex(column);
-  height: 100vh;
   margin-left:20vw;
   width: 80vw;
   justify-content: flex-start;
   background-color: aquamarine;
-  padding:clamp(1rem, 3.8vw, 4.5rem);
-  // padding: 4.5rem;
+  padding-inline: clamp(1rem, 3.8vw, 4.5rem);
+  padding-top: clamp(2rem, 3.8vw, 5rem);
 }
 
 img {
@@ -53,11 +52,17 @@ img {
 
 a {
   text-decoration: none;
-  color: var(--white);
+  color: #000000;
 }
 
+a:hover{
+  color: #000000;
+}
+a:active{
+  color: #000000;
+}
 @media (max-width: 600px) {
-  main{
+  .main-footer{
     width: 100%;
     margin-top:15vh;
     margin-left:0;
