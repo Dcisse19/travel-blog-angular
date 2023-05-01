@@ -25,7 +25,7 @@ export class HomeComponent {
   getLastTrip(){
     this.tripService.getLastTrip().subscribe((trip) => {
       this.lastTrip = trip;
-      console.log(trip);
+      // console.log(trip);
     });
   }
 }
