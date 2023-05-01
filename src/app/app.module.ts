@@ -17,6 +17,7 @@ import { PostHeroComponent } from './components/post-hero/post-hero.component';
 import { PostInfoComponent } from './components/post-info/post-info.component';
 import { TripReviewComponent } from './components/trip-review/trip-review.component';
 import { TripGalleryComponent } from './components/trip-gallery/trip-gallery.component';
+import { BackButtonComponent } from './components/back-button/back-button.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { TripGalleryComponent } from './components/trip-gallery/trip-gallery.com
     PostHeroComponent,
     PostInfoComponent,
     TripReviewComponent,
-    TripGalleryComponent
+    TripGalleryComponent,
+    BackButtonComponent
   ],
   imports: [
     BrowserModule,

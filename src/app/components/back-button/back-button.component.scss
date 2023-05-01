@@ -1,0 +1,20 @@
+:host {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
+button {
+  border: none;
+  background-color: var(--main-color);
+  padding: clamp(25px, 4vw, 40px);
+  .back-button {
+    width: clamp(14px, 4vw, 30px);
+    color: var(--white);
+  }
+}
+
+@media (max-width: 600px) {
+  :host {
+    top: 15vh;
+  }
+}
