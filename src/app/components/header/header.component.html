@@ -2,5 +2,5 @@
   <a routerLink="/">Carnet de voyage</a>
   <hr />
   <hr />
-  <p>Tirana<br />31°C</p>
+  <p *ngIf="weather">{{city}}<br />{{weather.days[0].temp}}°C</p>
 </div>

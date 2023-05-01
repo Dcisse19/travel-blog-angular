@@ -4,3 +4,9 @@ export interface Environment {
   auth?: string,
   envName: string,
 }
+
+export interface ApiEnvironment {
+  url: string,
+  key: string,
+  contentType: string,
+}

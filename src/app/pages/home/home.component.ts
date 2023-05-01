@@ -9,7 +9,7 @@ import { ITrip, TRIPS } from 'src/mocks/cities.mock';
 })
 export class HomeComponent {
   trips!:ITrip[];
-  trip:ITrip = TRIPS[0];
+  trip!:ITrip;
   lastTrip!:ITrip;
 
   constructor(private tripService: TravelCitiesService){}
@@ -23,6 +23,9 @@ export class HomeComponent {
     this.tripService.getTrips().subscribe((trips) => this.trips = trips)
   }
   getLastTrip(){
-    this.tripService.getLastTrip().subscribe((trip) => this.lastTrip = trip);
+    this.tripService.getLastTrip().subscribe((trip) => {
+      this.lastTrip = trip;
+      console.log(trip);
+    });
   }
 }

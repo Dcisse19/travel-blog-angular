@@ -16,6 +16,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { PostHeroComponent } from './components/post-hero/post-hero.component';
 import { PostInfoComponent } from './components/post-info/post-info.component';
 import { TripReviewComponent } from './components/trip-review/trip-review.component';
+import { TripGalleryComponent } from './components/trip-gallery/trip-gallery.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { TripReviewComponent } from './components/trip-review/trip-review.compon
     FooterComponent,
     PostHeroComponent,
     PostInfoComponent,
-    TripReviewComponent
+    TripReviewComponent,
+    TripGalleryComponent
   ],
   imports: [
     BrowserModule,

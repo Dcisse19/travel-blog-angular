@@ -1,0 +1,24 @@
+section{
+  align-items: flex-start;
+  gap: clamp(1rem, 3vw, 1.5rem);
+  h4{
+    margin-bottom: clamp(0.8rem, 2.5vw, 1.2rem);
+  }
+  .gallery{
+    flex-wrap: wrap;
+    gap: clamp(0.5rem, 3vw, 0.9rem);
+    justify-content: center;
+    align-self: center;
+  img{
+    width: 73vw;
+    max-width: 320px;
+  }
+  }
+}
+
+@media (max-width: 1277px){
+  .gallery{
+    justify-content: center;
+  }
+}
+
