@@ -17,7 +17,8 @@ export class TravelCitiesService {
   getTrips():Observable<ITrip[]>{
     console.log("environnement : ",environment.envName);
     if(environment.envName === 'dev'){
-      return of(TRIPS);
+      const trips = TRIPS.filter((trip) => trip.isMain === false);
+      return of(trips);
     }
     return this.http.get<ITrip[]>(`${this.tripUrl}/cities?isMain=false`);
   }
